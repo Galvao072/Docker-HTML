@@ -1,9 +1,10 @@
 version : "3.8"
 
 services:
-  api:
-    build: "."
+
+  site:
     container_name: web-container
+    image: "galvao072/imageno:v1"
     restart: always
     ports:
       - "80:80"
